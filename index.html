@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Случайный сайт</title>
+<style>
+  /* Стили для контейнера */
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  /* Стили для заголовка */
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  /* Стили для ссылки */
+  .random-link {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .random-link:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Добро пожаловать на случайный сайт!</h1>
+  <p>Вы готовы к приключениям?</p>
+  <a class="random-link" href="#" id="randomLink">Перейти на случайный сайт</a>
+</div>
+
+<script>
+  var links = [
+    "https://www.google.com",
+    "https://www.yahoo.com",
+    "https://www.bing.com",
+    "https://www.wikipedia.org",
+    "https://www.github.com",
+    "https://www.stackoverflow.com",
+    "https://www.medium.com",
+    "https://www.twitch.tv",
+    "https://www.netflix.com",
+    "https://www.etsy.com",
+    "https://www.space.com",
+    "https://www.mentalfloss.com",
+    "https://www.scientificamerican.com",
+    "https://www.nationalgeographic.com",
+    "https://www.nasa.gov",
+    "https://www.zooniverse.org",
+    "https://www.unsplash.com",
+    "https://www.archdaily.com",
+    "https://www.fubiz.net/en",
+    "https://www.instructables.com",
+    "https://www.thisiscolossal.com",
+    "https://www.smashingmagazine.com",
+    "https://www.abduzeedo.com",
+    "https://www.dribbble.com",
+    "https://www.behance.net",
+    "https://www.codepen.io",
+    "https://www.deviantart.com",
+    "https://www.reddit.com",
+    "https://www.imgur.com",
+    "https://www.quora.com",
+    "https://www.medium.com",
+    "https://www.twitter.com",
+    "https://www.facebook.com",
+    "https://www.instagram.com",
+    "https://www.linkedin.com",
+    "https://www.tumblr.com",
+    "https://www.pinterest.com",
+    "https://www.snapchat.com",
+    "https://www.whatsapp.com",
+    "https://www.telegram.org",
+    "https://www.discord.com",
+    "https://www.slack.com",
+    "https://www.zoom.us",
+    "https://www.skype.com",
+    "https://www.microsoft.com",
+    "https://www.apple.com",
+    "https://www.samsung.com",
+    "https://www.huawei.com",
+    "https://www.oneplus.com",
+    "https://www.sony.com",
+    "https://www.nintendo.com",
+    "https://www.playstation.com",
+    "https://www.xbox.com",
+    "https://www.steam.com",
+    "https://www.epicgames.com",
+    "https://www.unity.com",
+    "https://www.blender.org",
+    "https://www.autodesk.com",
+    "https://www.adobe.com",
+    "https://www.netflix.com",
+    "https://www.hulu.com",
+    "https://www.amazon.com",
+    "https://www.ebay.com",
+    "https://www.aliexpress.com",
+    "https://www.etsy.com",
+    "https://www.walmart.com",
+    "https://www.target.com",
+    "https://www.bestbuy.com",
+    "https://www.newegg.com",
+    "https://www.gamestop.com",
+    "https://www.staples.com",
+    "https://www.officedepot.com",
+    "https://www.apple.com",
+    "https://www.samsung.com",
+    "https://www.microsoft.com",
+    "https://www.huawei.com",
+    "https://www.google.com",
+    "https://www.apple.com",
+    "https://www.facebook.com",
+    "https://www.microsoft.com",
+    "https://www.google.com",
+    "https://www.apple.com",
+    "https://www.netflix.com",
+    "https://www.amazon.com",
+    "https://www.ebay.com",
+    "https://www.spotify.com",
+    "https://www.youtube.com",
+    "https://www.soundcloud.com",
+    "https://www.bandcamp.com",
+    "https://www.apple.com",
+    "https://www.amazon.com",
+    "https://www.ebay.com",
+    "https://www.walmart.com",
+    "https://www.target.com",
+    "https://www.bestbuy.com",
+    "https://www.newegg.com",
+    "https://www.gamestop.com",
+    "https://www.staples.com",
+    "https://www.officedepot.com",
+    "https://www.apple.com",
+    "https://www.samsung.com",
+    "https://www.microsoft.com",
+    "https://www.huawei.com",
+    "https://www.google.com"
+    // Добавьте здесь еще ссылки по вашему желанию
+  ];
+
+  var randomLink = document.getElementById("randomLink");
+
+  randomLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    var randomIndex = Math.floor(Math.random() * links.length);
+    var randomURL = links[randomIndex];
+    window.open(randomURL, '_blank');
+  });
+</script>
+
+</body>
+</html>
